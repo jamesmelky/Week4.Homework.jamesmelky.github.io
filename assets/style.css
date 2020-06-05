@@ -3,7 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
-
+/* Styling for entire webpage */
 html,
 body,
 .wrapper {
@@ -11,9 +11,9 @@ body,
   margin: 0;
   padding: 0;
 }
-
+/* Font styles for entire body */
 body {
-  font-family: sans-serif;
+  font-family: Georgia, sans-serif;
   background-color: #f9fbfd;
 }
 
@@ -22,7 +22,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-
+/* Header styling "password generator" */
 header {
   text-align: center;
   padding: 20px;
@@ -30,8 +30,14 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+/* Header card description slightly lighter than the title */
+h3 {
+  opacity: 70%;
+}
+
+/* The card styling that encompases the entire password generator field */
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: white;
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -41,7 +47,7 @@ header {
   max-width: 800px;
   padding: 30px 40px;
 }
-
+/* Appling styles below the card header */
 .card-header::after {
   content: " ";
   display: block;
@@ -50,14 +56,12 @@ header {
   height: 2px;
 }
 
-.card-body {
-  min-height: 100px;
-}
-
+/* Centering the button and text */
 .card-footer {
   text-align: center;
 }
 
+/* Spacing below the text field */
 .card-footer::before {
   content: " ";
   display: block;
@@ -66,19 +70,21 @@ header {
   height: 2px;
 }
 
+/* Applying styles below button */
 .card-footer::after {
   content: " ";
   display: block;
   clear: both;
 }
 
+/* Generate password button styling */
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgb(51, 98, 185);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
+  color: whitesmoke;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -88,15 +94,18 @@ header {
   cursor: pointer;
 }
 
+/* Button tag styles */
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
 
+/* Float settings */
 .float-right {
   float: right;
 }
 
+/* Password text field appearance */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -118,6 +127,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* Media query to adjust styles at smaller screen widths (690px) */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
@@ -130,6 +140,7 @@ button[disabled] {
   }
 }
 
+/* Media query to adjust font size at smaller screen widths (500px) */
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
